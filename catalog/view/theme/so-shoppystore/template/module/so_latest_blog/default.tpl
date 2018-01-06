@@ -197,5 +197,5 @@ $class_suffix_after=str_replace($icon_class, '', $class_suffix);
 
 <?php
 } else {
-    echo JText::_('Has no item to show!');
+    //echo JText::_('Has no item to show!');
 } ?>

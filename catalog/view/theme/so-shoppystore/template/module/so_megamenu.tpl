@@ -395,7 +395,7 @@
 	$(document).ready(function() {
 		var itemver =  <?php echo $ustawienia['show_itemver'];?> ;
 		if(itemver <= $( ".vertical ul.megamenu >li" ).length)
-			$('.vertical ul.megamenu').append('<li class="loadmore"><i class="fa fa-plus-square-o"></i><span class="more-view"><?php echo $all_cate_text;?></span></li>');
+			$('.vertical ul.megamenu').append('<li class="loadmore"><i class="fa fa-plus-square-o"></i><span class="more-view">Еще категории</span></li>');
 		$('.horizontal ul.megamenu li.loadmore').remove();
 
 		var show_itemver = itemver-1 ;
@@ -413,7 +413,7 @@
 						}
 				});
 				$(this).removeClass('open');
-				$('.loadmore').html('<i class="fa fa-plus-square-o"></i><span class="more-view"><?php echo $more_text;?></span>');
+				$('.loadmore').html('<i class="fa fa-plus-square-o"></i><span class="more-view">Еще категории</span>');
 			}else{
 				$('ul.megamenu li.item-vertical').each(function(i){
 						if(i>show_itemver){
@@ -421,7 +421,7 @@
 						}
 				});
 				$(this).addClass('open');
-				$('.loadmore').html('<i class="fa fa-minus-square-o"></i><span class="more-view"><?php echo $close_text;?></span>');
+				$('.loadmore').html('<i class="fa fa-minus-square-o"></i><span class="more-view">Закрыть</span>');
 			}
 		});
 	});

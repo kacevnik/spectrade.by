@@ -385,7 +385,7 @@ else $menu_type = 1;
 						 <!-- Search -->
 						 <?php 
 					if (trim($content_menu)) :?>
-						<div class="col-md-8 col-sm-8 col-xs-6">
+						<div class="col-md-7 col-sm-8 col-xs-6">
 						<?php echo $content_menu;?>
 						</div>
 					<?php endif;?>
@@ -393,7 +393,7 @@ else $menu_type = 1;
 				    <?php }  ?>
 	 
 				    <!-- Secondary menu -->
-				    <div class="shopping_cart pull-right col-md-2 col-sm-4 col-xs-6">
+				    <div class="shopping_cart pull-right col-md-3 col-sm-4 col-xs-6">
 					   <!--cart desktop-->
 					   <?php
 						  if (!isset($soconfig_products['product_catalog_mode']) || $soconfig_products['product_catalog_mode'] != 1) :

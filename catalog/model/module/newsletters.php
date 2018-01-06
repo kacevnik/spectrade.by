@@ -20,7 +20,7 @@ class ModelModuleNewsletters extends Model {
 		$res = $this->db->query("select * from ". DB_PREFIX ."newsletter where news_email='".$data['email']."'");
 		if($res->num_rows == 1)
 		{
-			return "Email Already Exist";
+			return "У Вас уже есть подписка";
 		}
 		else
 		{
@@ -28,12 +28,12 @@ class ModelModuleNewsletters extends Model {
 			if($this->db->query("INSERT INTO " . DB_PREFIX . "newsletter(news_email) values ('".$data['email']."')"))
 			{
 				//$this->response->redirect($this->url->link('common/home', '', 'SSL'));
-				return "Subscription Successfull";
+				return "Подписка оформлена";
 			}
 			else
 			{
 				//$this->response->redirect($this->url->link('common/home', '', 'SSL'));
-				return "Subscription Fail";
+				return "Ошибка подписки";
 			}
 		}
 	}

@@ -31,7 +31,7 @@
 			}
 			else
 			{
-				alert("Email Is Require");
+				alert("Email не заполнен!");
 				$(email).focus();
 				return false;
 			}
@@ -46,10 +46,10 @@
 				<form action="#" method="post">
 					<div class="form-group required">
 							<div class="input-box">
-							  <input type="email" name="txtemail" id="txtemail" value="" placeholder="<?php echo $email_text;?>" class="form-control input-lg"  /> 
+							  <input type="email" name="txtemail" id="txtemail" value="" placeholder="Укажите свой Email" class="form-control input-lg"  /> 
 							</div>
 							<div class="subcribe">
-									<button type="submit" class="btn btn-default btn-lg" onclick="return subscribe();"><?php echo $Subscribe_text?></button>  
+									<button type="submit" class="btn btn-default btn-lg" onclick="return subscribe();">Подписаться</button>  
 									
 							</div>
 					</div>
@@ -57,10 +57,9 @@
 				</form>
 		</div>
 		<div class="group-content">
-				<h2><?php echo $heading_title1; ?></h2>
+				<h2>Подпишись!</h2>
 				<p class="page-heading-sub" data-scroll-reveal="enter bottom and move 40px over 0.6s">
-						<?php echo $description1; ?>
-										
+						И получай уведомления на почту, о специальных предложениях, скидках и новых продуктах
 				</p>
 		</div>
 
