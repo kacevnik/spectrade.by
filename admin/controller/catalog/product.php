@@ -877,6 +877,14 @@ class ControllerCatalogProduct extends Controller {
 			$data['tax_class_id'] = $product_info['tax_class_id'];
 		} else {
 			$data['tax_class_id'] = 0;
+		}		
+
+		if (isset($this->request->post['set_description'])) {
+			$data['set_description'] = $this->request->post['set_description'];
+		} elseif (!empty($product_info)) {
+			$data['set_description'] = $product_info['set_description'];
+		} else {
+			$data['set_description'] = 0;
 		}
 
 		if (isset($this->request->post['date_available'])) {

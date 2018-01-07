@@ -112,6 +112,15 @@
                 </div>
               </div>
               <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-set-description">Обновлять описание</label>
+                    <div class="col-sm-10">
+                       <select id="input-set-description"  class="form-control" name="set_description">
+                        <option value="0"<?php if($set_description == 0){echo ' selected="selected"';} ?>>Нет</option>
+                        <option value="1"<?php if($set_description == 1){echo ' selected="selected"';} ?>>Да</option>
+                      </select>
+                    </div>
+                  </div>
+              <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
                 <div class="col-sm-10">
                   <input type="text" name="sku" value="<?php echo $sku; ?>" placeholder="<?php echo $entry_sku; ?>" id="input-sku" class="form-control" />
